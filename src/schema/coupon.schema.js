@@ -1,3 +1,4 @@
+const { type } = require('express/lib/response');
 const mongoose = require('mongoose');
 
 const couponSchema = new mongoose.Schema({
@@ -51,8 +52,8 @@ couponSchema.pre('validate', function (next) {
         if (!Array.isArray(details.get_products) || details.get_products.length === 0) {
             return next(new Error('BxGy coupon must have a non-empty get_products array.'));
         }
-        if (typeof details.repetition_limit !== 'number' || details.repetition_limit < 1) {
-            return next(new Error('BxGy coupon must have a repetition_limit greater than or equal to 1.'));
+        if (typeof details.repition_limit !== 'number' || details.repition_limit < 1) {
+            return next(new Error('BxGy coupon must have a repition_limit greater than or equal to 1.'));
         }
     }
 
