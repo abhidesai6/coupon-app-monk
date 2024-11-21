@@ -1,11 +1,10 @@
 ## Assumptions :
 – There is a limit to coupon application to three mainly: cart-wise, product-wise and BxGy type, each of them requires the fulfilment of certain conditions, be it the total amount of money spend regarding the cart content or quantity of products in the cart.
 
-– Coupon can be applied in practice only if the predefined rules for its application are met, if not the coupon will be disregarded.
+– Coupon can be applied  only if the criteria for its application are met, if not the coupon will not be applicable.
 
-– No assumptions are made regarding the data regarding the basket that this data is imaginary, or, it is out of sync with the warehouse system.
+– No assumptions and validations are made regarding the data regarding the cart 
 
-– BxGy type coupons apply only in baskets where there are already enough qualifying baskets.
 
 ## Limitations:
 – At the present time the API does not take into account challenges of big data sets, for instance when there are several coupons meant for dozens of products and they are applied when the number of items in the basket runs into hundreds.
